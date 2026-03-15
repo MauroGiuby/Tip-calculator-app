@@ -2,18 +2,6 @@
    VARIABLES — Global Design System
    =============================== */
 
-/* ===
-   RESET DI BASE
-   - Impedisce differenze tra browser
-   - Garantisce un box model prevedibile === */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   /* --- COLORS --- */
   --Strong-cyan: hsl(172, 67%, 45%);
@@ -26,4 +14,33 @@
   --Very-light-grayish-cyan: hsl(189, 41%, 97%);
   --White: hsl(0, 0%, 100%);
   --light-red: hsl(13, 70%, 61%);
+}
+
+/* ===========================
+   BASE RESET
+   Ensures consistent rendering across browsers
+   and provides a predictable box model
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  box-sizing: border-box;
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

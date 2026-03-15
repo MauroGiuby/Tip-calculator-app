@@ -16,20 +16,6 @@
   --light-red: hsl(13, 70%, 61%);
 }
 
-/* ===========================
-   BASE RESET
-   Ensures consistent rendering across browsers
-   and provides a predictable box model
-=========================== */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;

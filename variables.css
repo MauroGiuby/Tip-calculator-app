@@ -15,6 +15,15 @@
 }
 
 :root {
-  /* --- FONT FAMILY --- */
-  --font-family: 'Poppins', sans-serif;
+  /* --- COLORS --- */
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-cyan: hsl(183, 78%, 24%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --light-cyan: hsl(172, 61%, 77%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --light-red: hsl(13, 70%, 61%);
 }

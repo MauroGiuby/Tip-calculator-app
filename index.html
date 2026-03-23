@@ -25,10 +25,45 @@
 
       <form class="form" action="">
 
-        <label for="bill" class="form__label">Bill</label>
+        <div class="form__section form__section--bill">
 
-        <!-- Messaggio di errore (gestito via JS) -->
-        <span id="bill-warning" class="form__warning warning-bill">Can't be empty</span>
+        </div>
+
+
+        
+        <div class="form__group">
+
+          <div class="form__label-container">
+
+            <label for="bill" class="form__label">Bill</label>
+
+            <!-- Messaggio di errore (gestito via JS) -->
+            <span id="bill-warning" class="form__warning warning-bill">Can't be empty</span>
+
+          </div>
+
+          <!-- 
+            Campo numerico per inserire l'importo del conto.
+            È un input fondamentale per il calcolo della mancia.
+          -->
+          <input 
+            type="number"                 <!-- Specifica che l’input accetta solo numeri -->
+            name="bill"                   <!-- Nome del campo, utile per form submission -->
+            id="bill"                     <!-- ID univoco, necessario per collegare il <label> -->
+            class="form__input form__input-bill"  <!-- Classi BEM per styling -->
+            placeholder="0"               <!-- Valore visibile quando il campo è vuoto -->
+            aria-describedby="bill-warning" 
+            <!-- 
+              Attributo ARIA che collega l’input al messaggio di errore.
+              Migliora l’accessibilità per screen reader.
+            -->
+          >
+
+        </div>
+
+
+
+
 
       </form>
 

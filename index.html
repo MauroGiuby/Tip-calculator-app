@@ -109,9 +109,9 @@
           -->
           <fieldset class="form__group form__group--tip">
             <!-- Legend per accessibilità -->
-             <legend class="form__label form__label-tip">Select Tip %</legend>
+            <legend class="form__label form__label-tip">Select Tip %</legend>
 
-             <div class="form__tip-options">
+            <div class="form__tip-options">
               <label class="form__tip-label" for="tip-5">
                 <input 
                   type="radio"
@@ -167,8 +167,20 @@
                 50%
               </label>
 
+              <label 
+                class="form__tip-label form__tip-label-custom" 
+                for="tip-custom"
+                aria-label="Custom tip">
 
-             </div>
+                <input 
+                  type="number"
+                  name="tip-custom"
+                  id="tip-custom"
+                  class="form__input form__input--custom"
+                  placeholder="Custom"
+                />
+              </label>
+            </div>
               
 
 

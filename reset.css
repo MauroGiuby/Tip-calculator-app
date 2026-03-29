@@ -11,3 +11,39 @@
   margin: 0;
   padding: 0;
 }
+
+/* ============================================================
+   TEXT SIZE ADJUST CONTROL — Controllo dell'adattamento del testo
+   ============================================================ */
+
+/* 
+   IT: Impedisce ai browser mobili di ingrandire automaticamente il testo,
+   mantenendo coerenza tipografica e layout stabile.
+
+   EN: Prevents mobile browsers from automatically enlarging text,
+   ensuring consistent typography and stable layout.
+*/
+html {
+  -moz-text-size-adjust: none;       
+  /* IT: Disattiva l'adattamento del testo su Firefox.
+     EN: Disables text auto-adjust on Firefox. */
+
+  -webkit-text-size-adjust: none;    
+  /* IT: Disattiva l'adattamento del testo su Chrome/Safari.
+     EN: Disables text auto-adjust on Chrome/Safari. */
+
+  text-size-adjust: none;            
+  /* IT: Standard moderno per bloccare l'adattamento su browser compatibili.
+     EN: Modern standard to block text adjustment on supported browsers. */
+
+  box-sizing: border-box;            
+  /* IT: Include padding e border nel calcolo di width/height, evitando overflow.
+     EN: Includes padding and border in width/height calculations, preventing overflow. */
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

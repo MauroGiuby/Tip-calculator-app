@@ -15,18 +15,3 @@
   --White: hsl(0, 0%, 100%);
   --light-red: hsl(13, 70%, 61%);
 }
-
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  box-sizing: border-box;
-}
-
-/* Smooth scroll */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}

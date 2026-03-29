@@ -47,3 +47,28 @@ html {
     scroll-behavior: smooth;
   }
 }
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* ============================================================
+   LISTE ACCESSIBILI
+   - Rimuove gli stili predefiniti SOLO quando l'HTML specifica
+     un ruolo semantico (role="list")
+   - Evita di alterare liste che devono mantenere i pallini
+============================================================ */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}

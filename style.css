@@ -1,87 +1,4 @@
 /* ============================================================
-   GLOBAL RESET & BASELINE
-   These rules remove default browser styles to ensure consistent
-   rendering across all devices and browsers.
-============================================================ */
-
-/* Ensures the body always fills the viewport height */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-/* Removes default margins and padding from html and body */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* Universal margin reset to avoid unexpected spacing */
-* {
-  margin: 0;
-}
-
-/* ============================================================
-   TYPOGRAPHY & TEXT BEHAVIOR
-============================================================ */
-
-/* Tighter line-height for headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
-}
-
-/* Improves readability by balancing line breaks in headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
-/* Default styling for unclassed links */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
-}
-
-/* ============================================================
-   MEDIA ELEMENTS & FORM ELEMENTS
-============================================================ */
-
-/* Makes images responsive and block-level */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Ensures form elements inherit the global font */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Prevents tiny textareas when no rows attribute is set */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Adds scroll margin for anchored elements */
-:target {
-  scroll-margin-block: 5ex;
-}
-
-/* ============================================================
    BODY LAYOUT & GLOBAL STYLING
 ============================================================ */
 
@@ -239,10 +156,18 @@ body {
 .form__tip-label {
   font-weight: 700;
   font-size: 1.5rem;
+  line-height: 1.5;
   text-align: center;
   color: var(--White);
   position: relative;
-  width: 100%;
+
+  /* width: 100%; */
+
+  width: auto; /* oppure semplicemente rimuovi la proprietà */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   padding-inline: 0.875rem;
   padding-block: 0.375rem;
   cursor: pointer;
